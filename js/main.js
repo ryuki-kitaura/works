@@ -172,7 +172,17 @@ $('a[href^="#contact"]').click(function(){
     return false;
 });
 
+$(function() {
+  $('.element4').click(function() {
+      $('.map').toggleClass('active');
 
+      if ($('.map').hasClass('active')) {
+          $('.map').addClass('active');
+      } else {
+          $('.map').removeClass('active');
+      }
+  });
+});
 
 
 });
